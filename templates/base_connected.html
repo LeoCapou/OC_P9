@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+  {% block sidebar %}
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a href="{% url 'reviews:flux'%}" class="block mt-4 lg:inline-block lg:mt-0 text-red-600 hover:text-white mr-4">
+          Flux
+        </a>
+        <a href="{% url 'reviews:posts'%}" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+          Posts
+        </a>
+        <a href="{% url 'abonnements:dashboard'%}" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white">
+          Abonnements
+        </a>
+      </div>
+      <div>
+        <a href="{% url 'users:logout'%}" class="inline-block text-sm px-4 py-2 leading-none border rounded border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  {% endblock  %} 
+  
