@@ -43,10 +43,6 @@ Une fois la console placée dans le dossier du programme, il suffit d'exécuter 
 python3 manage.py runserver
 ```
 
-## Versions
-
-La version actuelle prends environ 3 heures pour extraire toutes les données du site. Des commits seront apportés pour améliorer ce point. 
-
 ## Auteur
 
 **Léo CAPOU** 
